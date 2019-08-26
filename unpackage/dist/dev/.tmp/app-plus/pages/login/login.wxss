@@ -63,7 +63,7 @@
   font-size: 32rpx;
   text-align: center;
   color: #fff;
-  background: #70b162;
+  background: #fe584d;
   -webkit-border-radius: 5rpx;
           border-radius: 5rpx;
 }
@@ -121,10 +121,10 @@
           box-sizing: border-box;
 }
 page {
-  background: -webkit-gradient(linear, left top, left bottom, from(#70b162), to(#70b162));
-  background: -webkit-linear-gradient(top, #70b162 0%, #70b162 100%);
-  background: -o-linear-gradient(top, #70b162 0%, #70b162 100%);
-  background: linear-gradient(to bottom, #70b162 0%, #70b162 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe584d), to(#fe584d));
+  background: -webkit-linear-gradient(top, #fe584d 0%, #fe584d 100%);
+  background: -o-linear-gradient(top, #fe584d 0%, #fe584d 100%);
+  background: linear-gradient(to bottom, #fe584d 0%, #fe584d 100%);
   height: 100%;
 }
 .icon {
@@ -189,7 +189,7 @@ page {
       font-weight: 200;
 }
 .form .btn {
-    color: #70b162;
+    color: #fe584d;
     width: 100%;
     height: 90rpx;
     display: -webkit-box;

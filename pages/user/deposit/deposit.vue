@@ -46,7 +46,7 @@
 								支付宝支付
 							</view>
 							<view class="right">
-								<radio :checked="paytype=='alipay'" color="#70b162" />
+								<radio :checked="paytype=='alipay'" color="#fe584d" />
 							</view>
 					</view>
 					<view class="row" @tap="paytype='wxpay'">
@@ -57,7 +57,7 @@
 								微信支付
 							</view>
 							<view class="right">
-								<radio :checked="paytype=='wxpay'" color="#70b162" />
+								<radio :checked="paytype=='wxpay'" color="#fe584d" />
 							</view>
 					</view>
 				</view>

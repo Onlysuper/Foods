@@ -63,7 +63,7 @@
   font-size: 32rpx;
   text-align: center;
   color: #fff;
-  background: #70b162;
+  background: #fe584d;
   -webkit-border-radius: 5rpx;
           border-radius: 5rpx;
 }
@@ -165,11 +165,11 @@ page {
     color: #999;
 }
 .tabr .on {
-    color: #70b162;
+    color: #fe584d;
 }
 .tabr .border {
     height: 4rpx;
-    background-color: #70b162;
+    background-color: #fe584d;
     -webkit-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
     transition: all .3s ease-out;
@@ -444,6 +444,6 @@ page {
 }
 .sub-list .row .carrier .goods-info .info .price-number .price {
               font-size: 30rpx;
-              color: #70b162;
+              color: #fe584d;
 }
 

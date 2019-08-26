@@ -84,7 +84,12 @@
 					[
 						{ type:"unreceived",ordersn:3,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
 					],
-					
+					[
+						{ type:"received",ordersn:4,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
+					],
+					[
+						{ type:"refunds",ordersn:6,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
+					]
 					
 					
 				],

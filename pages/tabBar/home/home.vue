@@ -1,31 +1,5 @@
 <template>
 	<view>
-		<!-- 状态栏 -->
-		<view v-if="showHeader" class="status" :style="{ position: headerPosition,top:statusTop,opacity: afterHeaderOpacity}"></view>
-		<!-- 顶部导航栏 -->
-		<view v-if="showHeader" class="header" :style="{ position: headerPosition,top:headerTop,opacity: afterHeaderOpacity }">
-			<!-- 定位城市 -->
-			<view class="addr">
-				<!-- <view class="icon location"></view> -->
-				{{ city }}
-			</view>
-			<!-- 搜索框 -->
-			<view class="input-box">
-				<input
-					placeholder="默认关键字"
-					placeholder-style="color:#c0c0c0;"
-					@tap="toSearch()"
-				/>
-				<view class="icon search"></view>
-			</view>
-			<!-- 右侧图标按钮 -->
-			<view class="icon-btn">
-				<view class="icon yuyin-home"></view>
-				<view class="icon tongzhi" @tap="toMsg"></view>
-			</view>
-		</view>
-		<!-- 占位 -->
-		<view v-if="showHeader" class="place"></view>
 		<!-- 轮播图 -->
 		<view class="swiper">
 			<view class="swiper-box">
@@ -60,39 +34,25 @@
 		<view class="space-split"></view>
 		<!-- <view class="banner"><image src="/static/img/banner.jpg"></image></view> -->
 		<!-- 活动区 -->
-		<view class="promotion">
-			<view class="text">优惠专区</view>
-			<view class="list">
-				<view
-					class="column"
-					v-for="(row, index) in Promotion"
-					@tap="toPromotion(row)"
-					:key="index"
-				>
-					<view class="top">
-						<view class="title">{{ row.title }}</view>
-						<view class="countdown" v-if="row.countdown">
-							<view>{{ row.countdown.h }}</view>
-							:
-							<view>{{ row.countdown.m }}</view>
-							:
-							<view>{{ row.countdown.s }}</view>
-						</view>
-					</view>
-					<view class="left">
-						<view class="ad">{{ row.ad }}</view>
-						<view class="into">点击进入</view>
-					</view>
-					<view class="right"><image :src="row.img"></image></view>
+		<view class="message">
+			<view class="title">消息</view>
+			<view class="item">
+				<view class="pic">
+					<image style="width:80upx;height:80upx;" :src="'/static/img/face.jpg'"></image>
+				</view>
+				<view class="body">
+					<view class="time">2017-2-07</view>
+					<view class="describe">您的订单已打包好，请前去取餐</view>
+				</view>
+				<view>
+					<button class="but" type="primary">查看</button>
 				</view>
 			</view>
 		</view>
 		<!-- 商品列表 -->
 		<view class="goods-list">
 			<view class="title">
-				<image src="/static/img/hua.png"></image>
-				猜你喜欢
-				<image src="/static/img/hua.png"></image>
+				菜品推荐
 			</view>
 			<view class="product-list">
 				<view
@@ -131,20 +91,16 @@ export default {
 			currentSwiper: 0,
 			// 轮播图片
 			swiperList: [
-				{ id: 1, src: 'url1', img: '/static/img/1.jpg' },
-				{ id: 2, src: 'url2', img: '/static/img/2.jpg' },
-				{ id: 3, src: 'url3', img: '/static/img/3.jpg' }
+				{ id: 1, src: 'url1', img: '/static/img/1.jpg' }
+				// { id: 2, src: 'url2', img: '/static/img/2.jpg' },
+				// { id: 3, src: 'url3', img: '/static/img/3.jpg' }
 			],
 			// 分类菜单
 			categoryList: [
-				{ id: 1, name: '定制', img: '/static/img/category/1.png' },
-				{ id: 2, name: '追溯', img: '/static/img/category/2.png' },
-				{ id: 3, name: '特产', img: '/static/img/category/3.png' },
-				{ id: 4, name: '菜谱', img: '/static/img/category/4.png' },
-				{ id: 5, name: '地图', img: '/static/img/category/5.png' },
-				{ id: 6, name: '体验', img: '/static/img/category/6.png' },
-				{ id: 7, name: '农场', img: '/static/img/category/7.png' },
-				{ id: 8, name: '社区', img: '/static/img/category/8.png' }
+				{ id: 1, name: '取消餐', img: '/static/img/category/1.png' },
+				{ id: 2, name: '预留餐', img: '/static/img/category/2.png' },
+				{ id: 3, name: '订餐', img: '/static/img/category/3.png' },
+				{ id: 4, name: '更多', img: '/static/img/category/4.png' }
 			],
 			Promotion: [],
 			//猜你喜欢列表
@@ -232,18 +188,6 @@ export default {
 		this.amapPlugin = new amap.AMapWX({
 			//高德地图KEY，随时失效，请务必替换为自己的KEY，参考：http://ask.dcloud.net.cn/article/35070
 			key: '7c235a9ac4e25e482614c6b8eac6fd8e'
-		});
-		//定位地址
-		this.amapPlugin.getRegeo({
-			success: data => {
-				this.city = data[0].regeocodeData.addressComponent.city.replace(/市/g, ''); //把"市"去掉
-				// #ifdef APP-PLUS
-				this.nVueTitle.postMessage({type: 'location',city:this.city});
-				// #endif
-			},
-			fail:err => {
-				console.log(err);
-			}
 		});
 		//开启定时器
 		this.Timer();
@@ -496,26 +440,22 @@ page{position: relative;background-color: #fff;}
 }
 .swiper {
 	width: 100%;
-	margin-top: 10upx;
 	display: flex;
 	justify-content: center;
 	.swiper-box {
-		width: 92%;
-		height: 30.7vw;
-
+		width: 100%;
+		height: 50.7vw;
 		overflow: hidden;
-		border-radius: 15upx;
-		box-shadow: 0upx 8upx 25upx rgba(0, 0, 0, 0.2);
 		//兼容ios，微信小程序
 		position: relative;
 		z-index: 1;
 		swiper {
 			width: 100%;
-			height: 30.7vw;
+			height: 50.7vw;
 			swiper-item {
 				image {
 					width: 100%;
-					height: 30.7vw;
+					height: 50.7vw;
 				}
 			}
 		}
@@ -583,85 +523,41 @@ page{position: relative;background-color: #fff;}
 		box-shadow: 0upx 5upx 25upx rgba(0, 0, 0, 0.3);
 	}
 }
-.promotion {
+.message {
 	width: 92%;
 	margin: 0 4%;
 	color:$uni-text-color;
-	.text {
+	font-size: $uni-font-size-base;
+	align-items: center;
+	
+	.title {
 		width: 100%;
 		height: 60upx;
-		font-size: 34upx;
-		font-weight: 600;
+		font-size: $uni-font-size-lg;
 		margin-top: -10upx;
+		height: 80upx;
+		line-height: 80upx;
 	}
-	.list {
+	.item {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		.column {
-			width: 43%;
-			padding: 15upx 3%;
-			// background-color: #ebf9f9;
-			border-radius: 10upx;
-			overflow: hidden;
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			.top {
-				width: 100%;
-				height: 40upx;
-				display: flex;
-				align-items: center;
-				margin-bottom: 5upx;
-				.title {
-					font-size: 30upx;
-				}
-				.countdown {
-					margin-left: 20upx;
-					display: flex;
-					height: 40upx;
-					display: flex;
-					align-items: center;
-					font-size: 20upx;
-					view {
-						height: 30upx;
-						background-color: $uni-color-success;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						color:$uni-text-color-inverse;
-						border-radius: 4upx;
-						margin: 0 4upx;
-						padding: 0 2upx;
-					}
-				}
-			}
-			.left {
-				width: 50%;
-				height: 18.86vw;
-				display: flex;
-				flex-wrap: wrap;
-				align-content: space-between;
-				.ad {
-					margin-top: 5upx;
-					width: 100%;
-					font-size: $uni-font-size-sm;
-					color: $uni-text-color-placeholder;
-				}
-				.into {
-					width: 100%;
-					font-size: $uni-font-size-base;
-					color:$uni-text-color-placeholder;
-					margin-bottom: 5upx;
-				}
-			}
-			.right {
-				width: 18.86vw;
-				height: 18.86vw;
-				image {
-					width: 18.86vw;
-					height: 18.86vw;
-				}
+		.pic{
+			width: 80upx;
+			height: 80upx;
+			border-radius: $uni-border-radius-lg;
+			overflow: hidden
+		}
+		.describe{
+			color:$uni-text-color-placeholder;
+		}
+		button{
+			font-size: $uni-font-size-base;
+			background: $uni-color-warning;
+			height: 50upx;
+			line-height: 50upx;
+			&.but{
+				background:$uni-color-error;
 			}
 		}
 	}
@@ -671,12 +567,14 @@ page{position: relative;background-color: #fff;}
 	.title {
 		width: 100%;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		justify-content: flex-start;
+		align-items: left;
 		height: 80upx;
-		color: $uni-color-warning;
-		font-size: 30upx;
+		line-height: 80upx;
+		color: $uni-text-color;
+		font-size: $uni-font-size-lg;
 		margin-top: 10upx;
+		padding-left: $uni-spacing-row-lg;
 		image {
 			width: 30upx;
 			height: 30upx;

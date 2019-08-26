@@ -237,7 +237,7 @@ export default {
 .target-on {
 	border-bottom-width: 4px;
 	border-bottom-style: solid;
-	border-bottom-color: #70b162;
+	border-bottom-color: #fe584d;
 }
 .target-text {
 	color: #aaa;

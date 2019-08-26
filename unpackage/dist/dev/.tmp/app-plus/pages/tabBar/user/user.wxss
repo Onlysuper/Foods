@@ -63,7 +63,7 @@
   font-size: 32rpx;
   text-align: center;
   color: #fff;
-  background: #70b162;
+  background: #fe584d;
   -webkit-border-radius: 5rpx;
           border-radius: 5rpx;
 }
@@ -129,7 +129,7 @@ page {
   height: 0;
   position: fixed;
   z-index: 10;
-  background-color: #70b162;
+  background-color: #fe584d;
   top: 0;
   height: var(--status-bar-height);
 }
@@ -152,7 +152,7 @@ page {
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: #70b162;
+  background-color: #fe584d;
   top: var(--status-bar-height);
 }
 .header .icon-btn {
@@ -185,7 +185,7 @@ page {
       font-size: 42rpx;
 }
 .place {
-  background-color: #70b162;
+  background-color: #fe584d;
   height: 100rpx;
   margin-top: var(--status-bar-height);
 }
@@ -203,7 +203,7 @@ page {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #70b162;
+  background-color: #fe584d;
   padding-bottom: 120rpx;
 }
 .user .left {

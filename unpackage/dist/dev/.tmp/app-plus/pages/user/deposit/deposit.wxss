@@ -63,7 +63,7 @@
   font-size: 32rpx;
   text-align: center;
   color: #fff;
-  background: #70b162;
+  background: #fe584d;
   -webkit-border-radius: 5rpx;
           border-radius: 5rpx;
 }
@@ -180,7 +180,7 @@
         color: 333;
 }
 .block .content .amount .list .box.on {
-          background-color: #70b162;
+          background-color: #fe584d;
           color: #fff;
 }
 .block .content .amount .num {
@@ -218,7 +218,7 @@
           margin: 0 20rpx;
           height: 60rpx;
           font-size: 30rpx;
-          color: #70b162;
+          color: #fe584d;
           -webkit-box-pack: end;
           -webkit-justify-content: flex-end;
               -ms-flex-pack: end;
@@ -313,7 +313,7 @@
         -ms-flex-align: center;
             align-items: center;
     color: #fff;
-    background-color: #70b162;
+    background-color: #fe584d;
     -webkit-box-shadow: 0rpx 5rpx 10rpx rgba(0, 0, 0, 0.2);
             box-shadow: 0rpx 5rpx 10rpx rgba(0, 0, 0, 0.2);
 }

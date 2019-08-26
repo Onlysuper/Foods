@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/vendor"],{
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/common/SDK/amap-wx.js":
-/*!************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/common/SDK/amap-wx.js ***!
-  \************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/common/SDK/amap-wx.js":
+/*!****************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/common/SDK/amap-wx.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12,10 +12,10 @@ function AMapWX(a) {this.key = a.key, this.requestConfig = { key: a.key, s: "rsx
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/common/SDK/md5.min.js":
-/*!************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/common/SDK/md5.min.js ***!
-  \************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/common/SDK/md5.min.js":
+/*!****************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/common/SDK/md5.min.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35,10 +35,10 @@ function AMapWX(a) {this.key = a.key, this.requestConfig = { key: a.key, s: "rsx
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/components/mpvue-citypicker/city-data/area.js":
-/*!************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/components/mpvue-citypicker/city-data/area.js ***!
-  \************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/components/mpvue-citypicker/city-data/area.js":
+/*!****************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/components/mpvue-citypicker/city-data/area.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12588,10 +12588,10 @@ areaData;exports.default = _default;
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/components/mpvue-citypicker/city-data/city.js":
-/*!************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/components/mpvue-citypicker/city-data/city.js ***!
-  \************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/components/mpvue-citypicker/city-data/city.js":
+/*!****************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/components/mpvue-citypicker/city-data/city.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14102,10 +14102,10 @@ cityData;exports.default = _default;
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/components/mpvue-citypicker/city-data/province.js":
-/*!****************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/components/mpvue-citypicker/city-data/province.js ***!
-  \****************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/components/mpvue-citypicker/city-data/province.js":
+/*!********************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/components/mpvue-citypicker/city-data/province.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14252,17 +14252,17 @@ provinceData;exports.default = _default;
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js":
-/*!**********************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js ***!
-  \**********************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js":
+/*!**************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createApp) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
+var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/App.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}
 
 _vue.default.config.productionTip = false;
 
@@ -14276,350 +14276,350 @@ createApp(app).$mount();
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fgoods%2Fgoods\"}":
-/*!*******************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fgoods%2Fgoods"} ***!
-  \*******************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fgoods%2Fgoods\"}":
+/*!***********************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fgoods%2Fgoods"} ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _goods = _interopRequireDefault(__webpack_require__(/*! ./pages/goods/goods.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/goods/goods.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _goods = _interopRequireDefault(__webpack_require__(/*! ./pages/goods/goods.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/goods/goods.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_goods.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fgoods%2Fratings%2Fratings\"}":
-/*!*******************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fgoods%2Fratings%2Fratings"} ***!
-  \*******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _ratings = _interopRequireDefault(__webpack_require__(/*! ./pages/goods/ratings/ratings.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/goods/ratings/ratings.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_ratings.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Flogin%2Flogin\"}":
-/*!*******************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
-  \*******************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/login/login.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/login/login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_login.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Flogin%2Fregister\"}":
-/*!**********************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Flogin%2Fregister"} ***!
-  \**********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _register = _interopRequireDefault(__webpack_require__(/*! ./pages/login/register.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/login/register.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_register.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Flogin%2Fresetpasswd\"}":
-/*!*************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Flogin%2Fresetpasswd"} ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
-
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _resetpasswd = _interopRequireDefault(__webpack_require__(/*! ./pages/login/resetpasswd.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/login/resetpasswd.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_resetpasswd.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
-
-/***/ }),
-
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fmsg%2Fchat%2Fchat\"}":
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fgoods%2Fratings%2Fratings\"}":
 /*!***********************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fmsg%2Fchat%2Fchat"} ***!
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fgoods%2Fratings%2Fratings"} ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _chat = _interopRequireDefault(__webpack_require__(/*! ./pages/msg/chat/chat.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/msg/chat/chat.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_chat.default);
+var _ratings = _interopRequireDefault(__webpack_require__(/*! ./pages/goods/ratings/ratings.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/goods/ratings/ratings.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_ratings.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fmsg%2Fmsg\"}":
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Flogin%2Flogin\"}":
+/*!***********************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Flogin%2Flogin"} ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _login = _interopRequireDefault(__webpack_require__(/*! ./pages/login/login.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/login/login.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_login.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Flogin%2Fregister\"}":
+/*!**************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Flogin%2Fregister"} ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _register = _interopRequireDefault(__webpack_require__(/*! ./pages/login/register.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/login/register.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_register.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Flogin%2Fresetpasswd\"}":
+/*!*****************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Flogin%2Fresetpasswd"} ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _resetpasswd = _interopRequireDefault(__webpack_require__(/*! ./pages/login/resetpasswd.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/login/resetpasswd.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_resetpasswd.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fmsg%2Fchat%2Fchat\"}":
 /*!***************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fmsg%2Fmsg"} ***!
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fmsg%2Fchat%2Fchat"} ***!
   \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _msg = _interopRequireDefault(__webpack_require__(/*! ./pages/msg/msg.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/msg/msg.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _chat = _interopRequireDefault(__webpack_require__(/*! ./pages/msg/chat/chat.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/msg/chat/chat.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_chat.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
+
+/***/ }),
+
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fmsg%2Fmsg\"}":
+/*!*******************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fmsg%2Fmsg"} ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
+
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
+var _msg = _interopRequireDefault(__webpack_require__(/*! ./pages/msg/msg.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/msg/msg.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_msg.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Forder%2Fconfirmation\"}":
-/*!**************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Forder%2Fconfirmation"} ***!
-  \**************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Forder%2Fconfirmation\"}":
+/*!******************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Forder%2Fconfirmation"} ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _confirmation = _interopRequireDefault(__webpack_require__(/*! ./pages/order/confirmation.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/order/confirmation.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _confirmation = _interopRequireDefault(__webpack_require__(/*! ./pages/order/confirmation.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/order/confirmation.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_confirmation.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fpay%2Fpayment%2Fpayment\"}":
-/*!*****************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fpay%2Fpayment%2Fpayment"} ***!
-  \*****************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fpay%2Fpayment%2Fpayment\"}":
+/*!*********************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fpay%2Fpayment%2Fpayment"} ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _payment = _interopRequireDefault(__webpack_require__(/*! ./pages/pay/payment/payment.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/pay/payment/payment.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _payment = _interopRequireDefault(__webpack_require__(/*! ./pages/pay/payment/payment.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/pay/payment/payment.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_payment.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fpay%2Fsuccess%2Fsuccess\"}":
-/*!*****************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fpay%2Fsuccess%2Fsuccess"} ***!
-  \*****************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fpay%2Fsuccess%2Fsuccess\"}":
+/*!*********************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fpay%2Fsuccess%2Fsuccess"} ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _success = _interopRequireDefault(__webpack_require__(/*! ./pages/pay/success/success.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/pay/success/success.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _success = _interopRequireDefault(__webpack_require__(/*! ./pages/pay/success/success.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/pay/success/success.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_success.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2FtabBar%2Fcart%2Fcart\"}":
-/*!**************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2FtabBar%2Fcart%2Fcart"} ***!
-  \**************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2FtabBar%2Fcart%2Fcart\"}":
+/*!******************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2FtabBar%2Fcart%2Fcart"} ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _cart = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/cart/cart.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/tabBar/cart/cart.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _cart = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/cart/cart.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/tabBar/cart/cart.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_cart.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2FtabBar%2Fhome%2Fhome\"}":
-/*!**************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2FtabBar%2Fhome%2Fhome"} ***!
-  \**************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2FtabBar%2Fhome%2Fhome\"}":
+/*!******************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2FtabBar%2Fhome%2Fhome"} ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _home = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/home/home.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/tabBar/home/home.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _home = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/home/home.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/tabBar/home/home.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_home.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2FtabBar%2Fuser%2Fuser\"}":
-/*!**************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2FtabBar%2Fuser%2Fuser"} ***!
-  \**************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2FtabBar%2Fuser%2Fuser\"}":
+/*!******************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2FtabBar%2Fuser%2Fuser"} ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _user = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/user/user.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/tabBar/user/user.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _user = _interopRequireDefault(__webpack_require__(/*! ./pages/tabBar/user/user.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/tabBar/user/user.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_user.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fuser%2Faddress%2Faddress\"}":
-/*!******************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fuser%2Faddress%2Faddress"} ***!
-  \******************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fuser%2Faddress%2Faddress\"}":
+/*!**********************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fuser%2Faddress%2Faddress"} ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _address = _interopRequireDefault(__webpack_require__(/*! ./pages/user/address/address.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/user/address/address.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _address = _interopRequireDefault(__webpack_require__(/*! ./pages/user/address/address.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/user/address/address.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_address.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fuser%2Faddress%2Fedit%2Fedit\"}":
-/*!**********************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fuser%2Faddress%2Fedit%2Fedit"} ***!
-  \**********************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fuser%2Faddress%2Fedit%2Fedit\"}":
+/*!**************************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fuser%2Faddress%2Fedit%2Fedit"} ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _edit = _interopRequireDefault(__webpack_require__(/*! ./pages/user/address/edit/edit.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/user/address/edit/edit.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _edit = _interopRequireDefault(__webpack_require__(/*! ./pages/user/address/edit/edit.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/user/address/edit/edit.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_edit.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fuser%2Fcoupon%2Fcoupon\"}":
-/*!****************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fuser%2Fcoupon%2Fcoupon"} ***!
-  \****************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fuser%2Fcoupon%2Fcoupon\"}":
+/*!********************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fuser%2Fcoupon%2Fcoupon"} ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _coupon = _interopRequireDefault(__webpack_require__(/*! ./pages/user/coupon/coupon.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/user/coupon/coupon.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _coupon = _interopRequireDefault(__webpack_require__(/*! ./pages/user/coupon/coupon.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/user/coupon/coupon.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_coupon.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fuser%2Fdeposit%2Fdeposit\"}":
-/*!******************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fuser%2Fdeposit%2Fdeposit"} ***!
-  \******************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fuser%2Fdeposit%2Fdeposit\"}":
+/*!**********************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fuser%2Fdeposit%2Fdeposit"} ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _deposit = _interopRequireDefault(__webpack_require__(/*! ./pages/user/deposit/deposit.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/user/deposit/deposit.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _deposit = _interopRequireDefault(__webpack_require__(/*! ./pages/user/deposit/deposit.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/user/deposit/deposit.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_deposit.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fuser%2Fkeep%2Fkeep\"}":
-/*!************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fuser%2Fkeep%2Fkeep"} ***!
-  \************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fuser%2Fkeep%2Fkeep\"}":
+/*!****************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fuser%2Fkeep%2Fkeep"} ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _keep = _interopRequireDefault(__webpack_require__(/*! ./pages/user/keep/keep.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/user/keep/keep.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _keep = _interopRequireDefault(__webpack_require__(/*! ./pages/user/keep/keep.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/user/keep/keep.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_keep.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fuser%2FmyQR%2FmyQR\"}":
-/*!************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fuser%2FmyQR%2FmyQR"} ***!
-  \************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fuser%2FmyQR%2FmyQR\"}":
+/*!****************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fuser%2FmyQR%2FmyQR"} ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _myQR = _interopRequireDefault(__webpack_require__(/*! ./pages/user/myQR/myQR.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/user/myQR/myQR.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _myQR = _interopRequireDefault(__webpack_require__(/*! ./pages/user/myQR/myQR.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/user/myQR/myQR.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_myQR.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{\"page\":\"pages%2Fuser%2Fsetting%2Fsetting\"}":
-/*!******************************************************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/main.js?{"page":"pages%2Fuser%2Fsetting%2Fsetting"} ***!
-  \******************************************************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/main.js?{\"page\":\"pages%2Fuser%2Fsetting%2Fsetting\"}":
+/*!**********************************************************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/main.js?{"page":"pages%2Fuser%2Fsetting%2Fsetting"} ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json");
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json");
 
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ "./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js"));
-var _setting = _interopRequireDefault(__webpack_require__(/*! ./pages/user/setting/setting.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages/user/setting/setting.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _setting = _interopRequireDefault(__webpack_require__(/*! ./pages/user/setting/setting.vue */ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages/user/setting/setting.vue"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 createPage(_setting.default);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-app-plus/dist/index.js */ "./node_modules/@dcloudio/uni-app-plus/dist/index.js")["createPage"]))
 
 /***/ }),
 
-/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json":
-/*!*************************************************************!*\
-  !*** /Users/apple/WORK_SPACE/APPS/HM-mall_1.2.0/pages.json ***!
-  \*************************************************************/
+/***/ "../../../../../../Users/apple/WORK_SPACE/APPS/Foods/pages.json":
+/*!*****************************************************!*\
+  !*** /Users/apple/WORK_SPACE/APPS/Foods/pages.json ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

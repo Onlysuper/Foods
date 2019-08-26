@@ -1,8 +1,8 @@
 {
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "#70b162",
-  "backgroundColorTop": "#70b162",
+  "navigationBarBackgroundColor": "#fe584d",
+  "backgroundColorTop": "#fe584d",
   "navigationBarTextStyle": "white",
   "titleNView": false,
   "subNVues": [

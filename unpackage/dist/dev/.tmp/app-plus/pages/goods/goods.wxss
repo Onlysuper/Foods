@@ -63,7 +63,7 @@
   font-size: 32rpx;
   text-align: center;
   color: #fff;
-  background: #70b162;
+  background: #fe584d;
   -webkit-border-radius: 5rpx;
           border-radius: 5rpx;
 }

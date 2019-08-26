@@ -63,7 +63,7 @@
   font-size: 32rpx;
   text-align: center;
   color: #fff;
-  background: #70b162;
+  background: #fe584d;
   -webkit-border-radius: 5rpx;
           border-radius: 5rpx;
 }
@@ -147,7 +147,7 @@ view {
     height: 80rpx;
     -webkit-border-radius: 80rpx;
             border-radius: 80rpx;
-    background-color: #70b162;
+    background-color: #fe584d;
     color: #fff;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -234,7 +234,7 @@ view {
 }
 .list .row .center .name-tel .default {
           font-size: 22rpx;
-          background-color: #70b162;
+          background-color: #fe584d;
           color: #fff;
           padding: 0 18rpx;
           -webkit-border-radius: 24rpx;

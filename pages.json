@@ -8,12 +8,12 @@
 				"onReachBottomDistance":50,
 				"app-plus": {
 					"titleNView": false ,//禁用原生导航栏
-					"softinputNavBar":"none",
-					"subNVues":[{  
-						"id": "homeTitleNvue", // 唯一标识  
-						"path": "pages/tabBar/home/subNvue/homeTitleNvue", // 页面路径  
-						"type":"navigationBar"
-					}]
+					"softinputNavBar":"none"
+					// "subNVues":[{  
+					// 	"id": "homeTitleNvue", // 唯一标识  
+					// 	"path": "pages/tabBar/home/subNvue/homeTitleNvue", // 页面路径  
+					// 	"type":"navigationBar"
+					// }]
 				}
 			}
 		},
@@ -49,8 +49,8 @@
 			"style": {
 				"enablePullDownRefresh": true,
 				"backgroundTextStyle":"light",
-				"navigationBarBackgroundColor":"#70b162",
-				"backgroundColorTop":"#70b162",
+				"navigationBarBackgroundColor":"#fe584d",
+				"backgroundColorTop":"#fe584d",
 				"navigationBarTextStyle":"white",
 				"app-plus": {
 					"titleNView": false ,//禁用原生导航栏
@@ -91,7 +91,7 @@
 			"path": "pages/login/login",
 			"style": {
 				"navigationBarTitleText": "登录",
-				"navigationBarBackgroundColor":"#70b162",
+				"navigationBarBackgroundColor":"#fe584d",
 				"navigationBarTextStyle":"white",
 				"app-plus": {
 		            "bounce": "none" ,//关闭窗口回弹效果
@@ -103,7 +103,7 @@
 			"path": "pages/login/register",
 			"style": {
 				"navigationBarTitleText": "注册账号",
-				"navigationBarBackgroundColor":"#70b162",
+				"navigationBarBackgroundColor":"#fe584d",
 				"navigationBarTextStyle":"white",
 				"app-plus": {
 				    "bounce": "none" ,//关闭窗口回弹效果
@@ -115,7 +115,7 @@
 			"path": "pages/login/resetpasswd",
 			"style": {
 				"navigationBarTitleText": "重置密码",
-				"navigationBarBackgroundColor":"#70b162",
+				"navigationBarBackgroundColor":"#fe584d",
 				"navigationBarTextStyle":"white",
 				"app-plus": {
 				    "bounce": "none" ,//关闭窗口回弹效果
@@ -162,7 +162,7 @@
             "style" : {
 				"enablePullDownRefresh": true,
 				"navigationBarTitleText": "消息列表",
-				"navigationBarBackgroundColor":"#70b162",
+				"navigationBarBackgroundColor":"#fe584d",
 				"navigationBarTextStyle":"white"
 			}
         }
@@ -182,7 +182,7 @@
             "path" : "pages/user/coupon/coupon",
             "style" : {
 				"navigationBarTitleText": "优惠券",
-				"navigationBarBackgroundColor":"#70b162",
+				"navigationBarBackgroundColor":"#fe584d",
 				"navigationBarTextStyle":"white",
 				"app-plus":{
 					"bounce":"none"
@@ -193,7 +193,7 @@
             "path" : "pages/user/keep/keep",
             "style" : {
 				"navigationBarTitleText": "我的收藏",
-				"navigationBarBackgroundColor":"#70b162",
+				"navigationBarBackgroundColor":"#fe584d",
 				"navigationBarTextStyle":"white",
 				"app-plus":{
 					"bounce":"none"
@@ -266,7 +266,7 @@
 	},
 	"tabBar": {
 		"color": "#333333",
-		"selectedColor": "#70b162",
+		"selectedColor": "#fe584d",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"list": [{
@@ -287,11 +287,17 @@
 				"selectedIconPath": "static/img/tabBar/cart-on.png",
 				"text": "购物车"
 			},
+			// {
+			// 	"pagePath": "pages/user/order_list/order_list",
+			// 	"iconPath": "static/img/tabBar/user.png",
+			// 	"selectedIconPath": "static/img/tabBar/user-on.png",
+			// 	"text": "我的订单"
+			// },
 			{
 				"pagePath": "pages/tabBar/user/user",
 				"iconPath": "static/img/tabBar/user.png",
 				"selectedIconPath": "static/img/tabBar/user-on.png",
-				"text": "我的"
+				"text": "个人中心"
 			}
 		]
 	}

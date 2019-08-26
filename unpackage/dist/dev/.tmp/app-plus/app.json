@@ -32,7 +32,7 @@
   },
   "tabBar": {
     "color": "#333333",
-    "selectedColor": "#70b162",
+    "selectedColor": "#fe584d",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
@@ -52,7 +52,7 @@
         "pagePath": "pages/tabBar/user/user",
         "iconPath": "static/img/tabBar/user.png",
         "selectedIconPath": "static/img/tabBar/user-on.png",
-        "text": "我的"
+        "text": "个人中心"
       }
     ]
   },

@@ -63,7 +63,7 @@
   font-size: 32rpx;
   text-align: center;
   color: #fff;
-  background: #70b162;
+  background: #fe584d;
   -webkit-border-radius: 5rpx;
           border-radius: 5rpx;
 }
@@ -611,7 +611,7 @@ page {
                   justify-content: flex-end;
 }
 .content .msg-list .row .my .left .bubble {
-            background-color: #70b162;
+            background-color: #fe584d;
             color: #fff;
 }
 .content .msg-list .row .my .left .bubble.voice .icon {
