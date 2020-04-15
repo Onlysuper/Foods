@@ -69,27 +69,28 @@
 				//订单列表 演示数据
 				orderList:[
 					[
-						{ type:"unpaid",ordersn:0,goods_id: 0, img: '/static/img/goods/1.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '168.00',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
-						{ type:"unpaid",ordersn:1,goods_id: 1, img: '/static/img/goods/2.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '168.00',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
-						{ type:"back",ordersn:2,goods_id: 1, img: '/static/img/goods/3.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '168.00',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
-						{ type:"unreceived",ordersn:3,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '168.00',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
+						// { type:"unpaid",ordersn:0,goods_id: 0, img: '/static/img/goods/1.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '168.00',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
+						// { type:"unpaid",ordersn:1,goods_id: 1, img: '/static/img/goods/2.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '168.00',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
+						// { type:"back",ordersn:2,goods_id: 1, img: '/static/img/goods/3.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '168.00',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
+						// { type:"unreceived",ordersn:3,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '168.00',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
 					],
 					[
-						{ type:"unpaid",ordersn:0,goods_id: 0, img: '/static/img/goods/1.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
-						{ type:"unpaid",ordersn:1,goods_id: 1, img: '/static/img/goods/2.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
+						// { type:"unpaid",ordersn:0,goods_id: 0, img: '/static/img/goods/1.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 },
+						// { type:"unpaid",ordersn:1,goods_id: 1, img: '/static/img/goods/2.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
 					],
 					[
 						//无
 					],
 					[
-						{ type:"unreceived",ordersn:3,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
+						// { type:"unreceived",ordersn:3,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
 					],
 					[
-						{ type:"received",ordersn:4,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
+						// { type:"unreceived",ordersn:3,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
 					],
 					[
-						{ type:"refunds",ordersn:6,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
-					]
+						// { type:"unreceived",ordersn:3,goods_id: 1, img: '/static/img/goods/4.png', name: '商品名称商品名称商品名称商品名称商品名称', price: '￥168',payment:168.00,freight:12.00,spec:'规格:S码',numner:1 }
+					],
+					
 					
 					
 				],
@@ -99,7 +100,7 @@
 		},
 		onLoad(option) {
 			//option为object类型，会序列化上个页面传递的参数
-			console.log("option: " + JSON.stringify(option));
+			// console.log("option: " + JSON.stringify(option));
 			let tbIndex = parseInt(option.tbIndex)+1;
 			this.list = this.orderList[tbIndex];
 			this.tabbarIndex = tbIndex;

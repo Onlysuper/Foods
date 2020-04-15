@@ -1,11 +1,13 @@
 <template>
 	<view>
-		<view v-if="showHeader" class="status" :style="{position:headerPosition,top:statusTop}"></view>
+		
+		<!-- <view class="status" :style="{position:headerPosition}"></view> -->
+		<!-- <view v-if="showHeader" class="status" :style="{position:headerPosition,top:statusTop}"></view> -->
+		<view v-if="showHeader" class="place"></view>
 		<view v-if="showHeader" class="header" :style="{position:headerPosition,top:headerTop}">
 			<view class="title">购物车</view>
 		</view>
 		<!-- 占位 -->
-		<view v-if="showHeader" class="place"></view>
 		<!-- 商品列表 -->
 		<view class="goods-list">
 			<view class="tis" v-if="goodsList.length==0">购物车是空的哦~</view>
@@ -22,7 +24,7 @@
 							<view :class="[row.selected?'on':'']"></view>
 						</view>
 					</view>
-					<!-- 商品信息 -->
+					<!-- 商品信息 --> 
 					<view class="goods-info" @tap="toGoods(row)">
 						<view class="img">
 							<image :src="row.img"></image>
@@ -71,6 +73,7 @@
 	export default {
 		data() {
 			return {
+				footerbottom:'',
 				sumPrice:'0.00',
 				headerPosition:"fixed",
 				headerTop:null,
@@ -105,14 +108,29 @@
 		onLoad() {
 			//兼容H5下结算条位置
 			// #ifdef H5
-				this.footerbottom = document.getElementsByTagName('uni-tabbar')[0].offsetHeight+'px';
+			this.footerbottom = document.getElementsByTagName('uni-tabbar')[0].offsetHeight+'px';
 			// #endif
 			// #ifdef APP-PLUS
 			this.showHeader = false;
 			this.statusHeight = plus.navigator.getStatusbarHeight();
 			// #endif
+			this.cartGoodsInit()
+		},
+		onShow(){
+			this.cartGoodsInit()
 		},
 		methods: {
+			cartGoodsInit(){
+				let cartGoods = uni.getStorageSync('cartGoods') || []
+				let hash = {};
+				cartGoods = cartGoods.reduce(function(item, next) {
+					hash[next.id] ? '' : hash[next.id] = true && item.push(next);
+					return item
+				}, [])
+				this.goodsList=cartGoods;
+
+				this.sum();
+			},
 			//加入商品 参数 goods:商品数据
 			joinGoods(goods){
 				/*

@@ -434,6 +434,9 @@ page {
       height: 50rpx;
       line-height: 50rpx;
 }
+.message .item button.but {
+        background: #dd524d;
+}
 .goods-list .title {
   width: 100%;
   display: -webkit-box;

@@ -1,6 +1,6 @@
 {
     "name" : "HM-mall",
-    "appid" : "",
+    "appid" : "__UNI__6023807",
     "description" : "",
     "versionName" : "1.2.0",
     "versionCode" : "100",
@@ -54,7 +54,21 @@
             },
             "ios" : {},
             /* ios打包配置 */
-            "sdkConfigs" : {}
+           /* ios打包配置 */
+           "sdkConfigs" : {
+               "ad" : {}
+           },
+			"icons" : {
+			    "android" : {
+			        "hdpi" : "static/img/logo.png",
+			        "xhdpi" : "static/img/logo.png",
+			        "xxhdpi" : "static/img/logo.png",
+			        "xxxhdpi" : "static/img/logo.png"
+			    },
+			    "ios" : {
+			        "appstore" : "static/img/logo.png"
+			    }
+			}
         }
     },
     /* SDK配置 */

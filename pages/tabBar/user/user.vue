@@ -4,7 +4,6 @@
 		<view v-if="showHeader" class="header" :style="{position:headerPosition,top:headerTop}">
 			<view class="addr"></view>
 			<view class="input-box">
-				
 			</view>
 			<view class="icon-btn">
 				<view class="icon tongzhi" @tap="toMsg"></view>
@@ -21,22 +20,24 @@
 			</view>
 			<!-- 昵称,个性签名 -->
 			<view class="right">
+				<!-- <view class="username">{{user.username}}</view> -->
 				<view class="username" @tap="toLogin">{{user.username}}</view>
+				<!-- <view class="signature">{{user.signature}}</view> -->
 				<view class="signature" @tap="toSetting">{{user.signature}}</view>
 			</view>
 			<!-- 二维码按钮 -->
-			<view class="erweima" @tap="toMyQR">
+			<!-- <view class="erweima" @tap="toMyQR">
 				<view class="icon qr"></view>
-			</view>
+			</view> -->
 		</view>
 		<!-- VIP banner -->
-		<view class="VIP">
+		<!-- <view class="VIP">
 			<view class="img">
 				<image src="/static/img/VIP.png"></image>
 			</view>
 			<view class="title">开通VIP会员</view>
 			<view class="tis">会员特权</view>
-		</view>
+		</view> -->
 		<!-- 订单-余额 -->
 		<view class="order">
 			<!-- 订单类型 -->
@@ -49,7 +50,7 @@
 				</view>
 			</view>
 			<!-- 余额 -->
-			<view class="balance-info">
+			<!-- <view class="balance-info">
 				<view class="left">
 					<view class="box">
 						<view class="num">{{user.integral}}</view>
@@ -72,7 +73,7 @@
 						<view class="text">充值</view>
 					</view>
 				</view>
-			</view>
+			</view> -->
 		</view>
 		<!-- 工具栏 -->
 		<view class="toolbar">
@@ -102,9 +103,9 @@
 				showHeader:true,
 				//个人信息,
 				user:{
-					username:'游客1002',
-					face:'/static/img/face.jpg',
-					signature:'点击昵称跳转登录/注册页',
+					username:'匿名',
+					face:'/static/img/head.png',
+					signature:'登录/注册',
 					integral:0,
 					balance:0,
 					envelope:0
@@ -121,13 +122,13 @@
 				mytoolbarList:[
 					{url:'../../user/keep/keep',text:'我的收藏',img:'/static/img/user/point.png'},
 					{url:'../../user/coupon/coupon',text:'优惠券',img:'/static/img/user/quan.png'}, 
-					{url:'',text:'新客豪礼',img:'/static/img/user/renw.png'},
-					{url:'',text:'领红包',img:'/static/img/user/momey.png'},
-					
 					{url:'../../user/address/address',text:'收货地址',img:'/static/img/user/addr.png'},
-					{url:'',text:'账户安全',img:'/static/img/user/security.png'},
-					{url:'',text:'银行卡',img:'/static/img/user/bank.png'},
-					{url:'',text:'抽奖',img:'/static/img/user/choujiang.png'},
+					// {url:'',text:'新客豪礼',img:'/static/img/user/renw.png'},
+					// {url:'',text:'领红包',img:'/static/img/user/momey.png'},
+					
+					// {url:'',text:'账户安全',img:'/static/img/user/security.png'},
+					// {url:'',text:'银行卡',img:'/static/img/user/bank.png'},
+					// {url:'',text:'抽奖',img:'/static/img/user/choujiang.png'},
 					// {text:'客服',img:'/static/img/user/kefu.png'},
 					// {text:'签到',img:'/static/img/user/mingxi.png'}
 					
@@ -190,6 +191,7 @@
 			},
 			toOrderList(index){
 				uni.setStorageSync('tbIndex',index);
+				console.log('index',index);
 				uni.navigateTo({url:'../../user/order_list/order_list?tbIndex='+index}) 
 			},
 			toSetting(){

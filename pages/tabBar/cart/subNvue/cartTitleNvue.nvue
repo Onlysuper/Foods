@@ -37,10 +37,10 @@ export default {
 .nav {
 	width: 690px;
 	margin-left: 30px;
-	height: 88px;
 	flex-direction: row;;
 	justify-content: flex-start;
 	align-items: center;
+	height: 100upx;
 }
 .title-text{
 	font-size: 36upx;

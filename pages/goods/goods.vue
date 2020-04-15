@@ -7,8 +7,8 @@
 				<view class="back"><view class="icon xiangqian" @tap="back" v-if="showBack"></view></view> 
 				<view class="middle"></view>
 				<view class="icon-btn">
-					<view class="icon tongzhi" @tap="toMsg"></view>
-					<view class="icon cart" @tap="joinCart"></view>
+					<!-- <view class="icon cart" @tap="goCart"></view> -->
+					<!-- <view class="icon tongzhi" @tap="toMsg"></view> -->
 				</view>
 			</view>
 			<!-- 头部-滚动渐变显示 -->
@@ -18,26 +18,26 @@
 					<view v-for="(anchor,index) in anchorlist" :class="[selectAnchor==index ?'on':'']" :key="index" @tap="toAnchor(index)">{{anchor.name}}</view>
 				</view>
 				<view class="icon-btn">
-					<view class="icon tongzhi" @tap="toMsg"></view>
-					<view class="icon cart" @tap="joinCart"></view>
+					<!-- <view class="icon cart" @tap="joinCart"></view> -->
+					<!-- <view class="icon tongzhi" @tap="toMsg"></view> -->
 				</view>
 			</view>
 		</view>
 		<!-- 底部菜单 -->
 		<view class="footer">
 			<view class="icons">
-				<view class="box" @tap="share">
+				<!-- <view class="box" @tap="share">
 					<view class="icon fenxiang"></view>
 					<view class="text">分享</view>
-				</view>
+				</view> -->
 				<view class="box" @tap="toChat">
 					<view class="icon kefu"></view>
 					<view class="text">客服</view>
 				</view>
-				<view class="box" @tap="keep">
+				<!-- <view class="box" @tap="keep">
 					<view class="icon" :class="[isKeep?'shoucangsel':'shoucang']"></view>
 					<view class="text">{{isKeep?'已':''}}收藏</view>
-				</view>
+				</view> -->
 			</view>
 			<view class="btn">
 				<view class="joinCart" @tap="joinCart">加入购物车</view>
@@ -92,7 +92,7 @@
 						<view class="description">{{item.description}}</view>
 					</view>
 				</view>
-				<view class="btn"><view class="button" @tap="hideService">完成</view></view>
+				<view class="btn"><view class="button" @tap="hideService">确定</view></view>
 			</view>
 		</view>
 		<!-- 规格-模态层弹窗 -->
@@ -105,6 +105,7 @@
 					<view class="sp">
 						<view v-for="(item,index) in goodsData.spec" :class="[index==selectSpec?'on':'']" @tap="setSelectSpec(index)" :key="index">{{item}}</view>
 					</view>
+					<!-- <view class="length" v-if="selectSpec!=null"> -->
 					<view class="length" v-if="selectSpec!=null">
 						<view class="text">数量</view>
 						<view class="number">
@@ -169,20 +170,20 @@
 				</view>
 			</view>
 		</view> -->
-		<Acell class="split-bottom-border1" title="规格" describe="100g"></Acell>
-		<Acell class="split-bottom-border1" title="运费" describe="全场满100免运费"></Acell>
+		<!-- <Acell class="split-bottom-border1" title="规格" describe="100g"></Acell> -->
+		<Acell class="split-bottom-border1" title="运费" describe="免运费"></Acell>
 		<!-- <Acell class="split-bottom-border1" title="参数" :link='true'></Acell> -->
 		<Acell class="split-bottom-border1" title="参数" describe="盒子包装"></Acell>
 		<!-- 评价 -->
 		<view class="info-box comments" id="comments">
 			<view class="row">
 				<view class="text">商品评价({{goodsData.comment.number}})</view>
-				<view class="arrow" @tap="toRatings">
+				<!-- <view class="arrow" @tap="toRatings">
 					<view class="show" @tap="showComments(goodsData.id)">
 						查看全部
 						<view class="icon xiangyou"></view>
 					</view>
-				</view>
+				</view> -->
 			</view>
 			<view class="comment" @tap="toRatings">
 				<view class="user-info">
@@ -222,9 +223,10 @@ export default {
 			//轮播主图数据
 			swiperList: [
 				{ id: 1, img: '/static/img/goods/1.png' },
-				{ id: 2, img: '/static/img/goods/2.png' },
-				{ id: 3, img: '/static/img/goods/3.png' },
 			],
+			mainImg:'',
+			gid:'',
+			price:'',
 			//轮播图下标
 			currentSwiper: 0,
 			anchorlist:[],//导航条锚点
@@ -238,17 +240,17 @@ export default {
 				name:"新鲜进口草莓",
 				price:"127.00",
 				number:1,
-				service:[
-					{name:"正品保证",description:"此商品官方保证为正品"},
-					{name:"极速退款",description:"此商品享受退货极速退款服务"},
-					{name:"7天退换",description:"此商品享受7天无理由退换服务"}
-				],
+				// service:[
+				// 	{name:"正品保证",description:"此商品官方保证为正品"},
+				// 	{name:"极速退款",description:"此商品享受退货极速退款服务"},
+				// 	{name:"7天退换",description:"此商品享受7天无理由退换服务"}
+				// ],
 				spec:["XS","S","M","L","XL","XXL"],
 				comment:{
 					number:102,
-					userface:'../../static/img/face.jpg',
-					username:'大黑哥',
-					content:'很不错，之前买了很多次了，很好看，能放很久，和图片色差不大，值得购买！'
+					userface:'../../static/img/head.png',
+					username:'匿名',
+					content:'很不错，值得购买！'
 				}
 			},
 			selectSpec:null,//选中规格
@@ -258,12 +260,67 @@ export default {
 		};
 	},
 	onLoad(option) {
+		let gid = option.gid*1+1; // 产品id
+		let gname = option.name;
+		let gprice = option.price;
+		// 轮播图
+		this.mainImg= '/static/img/goods/'+gid+'.png';
+		this.gid = option.gid;
+		this.price = gprice;
+		this.swiperList=[];
+		this.swiperList.push({ id: gid, img: this.mainImg })
+
+		// 产品信息
+		this.goodsData={
+			id:gid,
+			img:this.mainImg,
+			name:gname,
+			price:gprice,
+			number:1,
+			service:[
+				// {name:"正品保证",description:"此商品官方保证为正品"},
+				// {name:"极速退款",description:"此商品享受退货极速退款服务"},
+				// {name:"7天退换",description:"此商品享受7天无理由退换服务"}
+			],
+			spec:["50g","100g","300g"],
+			comment:{
+				number:0,
+				userface:'../../static/img/head.png',
+				username:'匿名',
+				content:'很新鲜，还会回购'
+			}
+		}
+		if(gid==1){
+			this.$set(this.goodsData,'comment',{
+				number:0,
+				userface:'../../static/img/head.png',
+				username:'匿名',
+				content:'不错，很新鲜'
+			})
+		}else if(gid==2){
+			this.$set(this.goodsData,'comment',{
+				number:0,
+				userface:'../../static/img/head.png',
+				username:'匿名',
+				content:'满意，祝店家生意兴隆'
+			})
+		}else if(gid==3){
+			this.$set(this.goodsData,'comment',{
+				number:0,
+				userface:'../../static/img/head.png',
+				username:'匿名',
+				content:'还可以'
+			})
+		}
+		
+		// 产品详情图
+		this.descriptionStr='<div style="text-align:center;"><img width="100%" src="/static/img/goods/'+gid+'.png"/></div>'
 		// #ifdef MP
 		//小程序隐藏返回按钮
 		this.showBack = false;
 		// #endif
 		//option为object类型，会序列化上个页面传递的参数
-		console.log(option.cid); //打印出上个页面传递的参数。
+		// console.log(option.cid); //打印出上个页面传递的参数。
 	},
 	onReady(){
 		this.calcAnchor();//计算锚点高度，页面数据是ajax加载时，请把此行放在数据渲染完成事件中执行以保证高度计算正确
@@ -282,7 +339,7 @@ export default {
 	},
 	//上拉加载，需要自己在page.json文件中配置"onReachBottomDistance"
 	onReachBottom() {
-		uni.showToast({ title: '触发上拉加载' });
+		// uni.showToast({ title: '触发上拉加载' });
 	},
 	mounted () {
 		
@@ -298,6 +355,11 @@ export default {
 				url:'../msg/msg'
 			})
 		},
+		// goCart(){
+		// 	uni.reLaunch({
+		// 		url:'/pages/tabBar/cart/cart'
+		// 	})
+		// },
 		// 客服
 		toChat(){
 			uni.navigateTo({
@@ -318,15 +380,6 @@ export default {
 		keep(){
 			this.isKeep = this.isKeep?false:true;
 		},
-		// 加入购物车
-		joinCart(){
-			if(this.selectSpec==null){
-				return this.showSpec(()=>{
-					uni.showToast({title: "已加入购物车"});
-				});
-			}
-			uni.showToast({title: "已加入购物车"});
-		},
 		//立即购买
 		buy(){
 			if(this.selectSpec==null){
@@ -336,6 +389,36 @@ export default {
 			}
 			this.toConfirmation();
 		},
+		// 加入购物车
+		joinCart(){
+			if(this.selectSpec==null){
+				return this.showSpec(()=>{
+					this.joinCart2()
+				});
+			}
+			this.joinCart2()
+		},
+		joinCart2(){
+			let img = this.mainImg;
+			let id = this.gid;
+			let number = this.goodsData.number;
+			let price = this.price;
+			let spec =this.goodsData.spec[this.selectSpec];
+			let name =this.goodsData.name
+			
+			let addPro = {
+				img,id,price,spec,name,
+				number:number,
+				selected:true
+			}
+			let cartGoods = uni.getStorageSync('cartGoods')||[];
+			cartGoods.push(addPro);
+			uni.setStorageSync('cartGoods',cartGoods);
+			// return false;
+			// spec:'规格:'+this.goodsData.spec[this.selectSpec],
+			uni.showToast({title: "已加入购物车"});
+		},
+		
 		//商品评论
 		toRatings(){
 			uni.navigateTo({
@@ -345,7 +428,12 @@ export default {
 		//跳转确认订单页面
 		toConfirmation(){
 			let tmpList=[];
-			let goods = {id:this.goodsData.id,img:'../../static/img/goods/1.png',name:this.goodsData.name,spec:'规格:'+this.goodsData.spec[this.selectSpec],price:this.goodsData.price,number:this.goodsData.number};
+			let goods = {
+			id:this.goodsData.id,
+			img:this.mainImg,
+			name:this.goodsData.name,
+			spec:'规格:'+this.goodsData.spec[this.selectSpec],
+			price:this.goodsData.price.replace("￥",''),number:this.goodsData.number};
 			tmpList.push(goods);
 			uni.setStorage({
 				key:'buylist',
@@ -363,6 +451,7 @@ export default {
 		},
 		//选择规格
 		setSelectSpec(index){
+			console.log(index)
 			this.selectSpec = index;
 		},
 		//减少数量
@@ -422,6 +511,7 @@ export default {
 			console.log('show');
 			this.specClass = 'show';
 			this.specCallback = fun;
+			// this.specCallback()
 		},
 		specCallback(){
 			return;
@@ -431,7 +521,7 @@ export default {
 			this.specClass = 'hide';
 			//回调
 
-			this.selectSpec&&this.specCallback&&this.specCallback();
+			this.selectSpec!=null&&this.specCallback&&this.specCallback();
 			this.specCallback = false;
 			setTimeout(() => {
 				this.specClass = 'none';
@@ -669,6 +759,7 @@ page {
 			font-size: 28upx;
 			display: flex;
 			flex-wrap: wrap;
+			
 			.serviceitem{
 				margin-right: 10upx;
 			}
@@ -747,10 +838,12 @@ page {
 		.content {
 			margin-top: 10upx;
 			font-size: 26upx;
+			// padding-bottom: 200upx;
 		}
 	}
 }
 .description {
+	padding-bottom: 100upx;
 	.title {
 		width: 100%;
 		height: 80upx;
@@ -849,6 +942,7 @@ page {
 		.content {
 			width: 100%;
 			padding: 20upx 0;
+			// padding-bottom: 200upx;
 		}
 		.btn {
 			width: 100%;

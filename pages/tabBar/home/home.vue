@@ -109,28 +109,42 @@ export default {
 					goods_id: 0,
 					img: '/static/img/goods/1.png',
 					name: '新鲜进口草莓',
-					price: '￥28.10',
+					price: '28.10',
 					slogan: '1235人付款'
 				},
 				{
 					goods_id: 1,
 					img: '/static/img/goods/2.png',
 					name: '水果胡萝卜',
-					price: '￥8.9',
+					price: '8.9',
 					slogan: '12人付款'
 				},
 				{
 					goods_id: 2,
 					img: '/static/img/goods/3.png',
 					name: '家常土豆',
-					price: '￥5.30',
+					price: '5.30',
 					slogan: '35人付款'
 				},
 				{
 					goods_id: 3,
 					img: '/static/img/goods/4.png',
 					name: '紫薯',
-					price: '￥24',
+					price: '24',
+					slogan: '5人付款'
+				},
+				{
+					goods_id: 4,
+					img: '/static/img/goods/5.png',
+					name: '五花肉',
+					price: '32',
+					slogan: '5人付款'
+				},
+				{
+					goods_id: 5,
+					img: '/static/img/goods/6.png',
+					name: '土鸡蛋',
+					price: '13',
 					slogan: '5人付款'
 				}
 			],
@@ -312,9 +326,9 @@ export default {
 		},
 		//商品跳转
 		toGoods(e) {
-			uni.showToast({ title: '商品' + e.goods_id, icon: 'none' });
+			// uni.showToast({ title: '商品' + e.goods_id, icon: 'none' });
 			uni.navigateTo({
-				url: '../../goods/goods'
+				url: '../../goods/goods?gid='+e.goods_id+'&name='+e.name+'&price='+e.price
 			});
 		},
 		//轮播图指示器
